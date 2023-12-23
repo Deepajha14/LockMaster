@@ -1,0 +1,39 @@
+:root {
+    --color-light-shades-1: #1d1f27;
+    --color-light-shades-2: #2f323d;
+    --color-light-shades-3: #4a4e5d;
+    --color-light-shades-4: #6d7285;
+    --color-light-shades-5: #9399ad;
+    --color-light-shades-6: #b4bace;
+    --color-light-shades-7: #d3d8ea;
+    --color-light-shades-8: #eff3ff;
+    --color-light-shades-alpha-1: rgba(186,188,243,.06);
+    --color-light-shades-alpha-2: rgba(194,202,245,.16);
+    --color-light-shades-alpha-3: rgba(202,211,249,.3);
+    --color-light-shades-alpha-4: rgba(210,219,254,.47);
+    --color-light-shades-alpha-5: rgba(216,224,252,.65);
+    --color-light-shades-alpha-6: rgba(223,230,254,.79);
+    --color-light-shades-alpha-7: rgba(230,235,255,.91);
+    --color-light-shades-alpha-8: #eff3ff;
+    --color-confirm-2: rgba(34,252,116,.52);
+    --color-confirm-3: rgba(56,252,107,.16);
+    --color-accent: #fff;
+    --color-background: #13151a;
+    --color-modal-background: rgba(3,6,13,.8);
+    --color-dialog: #2f323d;
+    --color-dialog-bg-light: rgba(19,21,26,.3);
+    --color-dialog-bg: rgba(19,21,26,.8);
+    --color-paywall-dark: #1d1f27;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--color-accent);
+  font-family: Satoshi-Variable,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+}
+
+.app-bg {
+  background-color: var(--color-background);
+}
