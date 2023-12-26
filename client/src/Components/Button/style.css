@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 5rem;
+    background-color: var(--color-accent);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-container {
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: var(--color-light-shades-8);
+}
+
+.btn-label {
+    color: var(--color-light-shades-2);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn-icon svg{
+    fill: var(--color-light-shades-2);
+    color: var(--color-light-shades-2);
+    font-size: 1.5rem;
+}

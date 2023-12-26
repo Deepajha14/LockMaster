@@ -25,9 +25,9 @@ export default function Login() {
                         <div className="hr-line"></div>
                     </div>
                     <form className="login-details">
-                        {/* <input placeholder="Email" className="email-input-box" type="email"></input> */}
-                        {/* <button className="continue-btn">Continue with Email</button> */}
-                        <h2 className="otp-heading">Check your inbox</h2>
+                        <input placeholder="Email" className="email-input-box" type="email"></input>
+                        <button className="continue-btn">Continue with Email</button>
+                        {/* <h2 className="otp-heading">Check your inbox</h2>
                         <div className="otp-desc">We've sent verification code to dummy@gmail.com</div>
                         <div className="otp-outer-container">
                             <div className="otp-inner-container">
@@ -36,7 +36,7 @@ export default function Login() {
                                 <input className="otp-input" id="3" ></input>
                                 <input className="otp-input" id="4" ></input>
                             </div>
-                        </div>
+                        </div> */}
                     </form>
                     <div className="terms-conditions">
                         By logging in you are agree with our <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>

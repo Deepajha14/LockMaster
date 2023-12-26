@@ -1,6 +1,5 @@
 import "./App.css";
-import Login from "./Components/Login";
-import Landing from "./Components/Landing";
+import Landing from "./Pages/Landing";
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <div className="app-bg">
       <Navbar/>
       <Landing/>
-      <Login/>
     </div>
   );
 }

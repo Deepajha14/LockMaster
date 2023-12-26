@@ -29,7 +29,6 @@
 *{
   margin: 0;
   padding: 0;
-  color: var(--color-accent);
   font-family: Satoshi-Variable,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   box-sizing: border-box;
 }
