@@ -1,5 +1,5 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
 
 export default function Button(props) {
   return (
@@ -7,7 +7,7 @@ export default function Button(props) {
       <div className="btn-container">
         <div className="btn-icon">{props.icon}</div>
         <div className="btn-label">{props.label}</div>
-      </div> 
+      </div>
     </button>
-  )
+  );
 }

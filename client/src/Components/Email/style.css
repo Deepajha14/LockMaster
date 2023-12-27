@@ -1,0 +1,39 @@
+.email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  margin-bottom: 1.5rem;
+}
+
+.email-input-box {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-light-shades-5);
+  background-color: transparent;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+.email-input-box:active,
+.email-input-box:hover,
+.email-input-box:focus {
+  border: 1px solid var(--color-light-shades-7);
+  outline: none;
+}
+
+.continue-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--color-light-shades-3);
+  color: var(--color-light-shades-8);
+}
+
+.continue-btn:hover {
+  background-color: var(--color-light-shades-4);
+}

@@ -1,89 +1,105 @@
 .banner-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 9rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 9rem 7rem 6rem;
 }
 
 .banner-heading {
-    color: var(--color-accent);
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 65px;
-    text-align: left;
-    max-width: 35rem;
+  color: var(--color-accent);
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
+  max-width: 35rem;
 }
 
 .banner-heading span {
-    font-size: 3.75rem;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 400;
-    line-height: 65px;
-    background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #00c3ff 39%, #726dff 51%, #ff6de9 63%, #ff345d 89%, #970fff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3.75rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  line-height: 65px;
+  background: -webkit-linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #00c3ff 39%,
+    #726dff 51%,
+    #ff6de9 63%,
+    #ff345d 89%,
+    #970fff 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .banner-tagline-container {
-    color: var(--color-light-shades-alpha-6);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0.095rem;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-end;
-    justify-content: flex-start;
+  color: var(--color-light-shades-alpha-6);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.095rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .banner-tagline {
-    max-width: 25rem;
+  max-width: 25rem;
 }
 
 .banner-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 @media only screen and (max-width: 1120px) {
-    .banner-container {
-        flex-direction: column;
-    }
+  .banner-container {
+    flex-direction: column;
+  }
 
-    .banner-heading {
-        text-align: center;
-        max-width: 100%;
-    }
+  .banner-heading {
+    text-align: center;
+    max-width: 100%;
+  }
 
-    .banner-tagline-container {
-        text-align: center;
-        align-items: center;
-        gap: 2rem;
-    }
+  .banner-tagline-container {
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    .banner-tagline {
-        max-width: 100%;
-    }
+  .banner-tagline {
+    max-width: 100%;
+  }
 }
 
-@media only screen and (max-width: 780px) {
-    .banner-container {
-        padding: 6rem 2rem;
-    }
+@media only screen and (max-width: 700px) {
+  .banner-container {
+    padding: 9rem 3rem 5rem;
+  }
+}
 
-    .banner-heading, .banner-heading span {
-        font-size: 2.5rem;
-    }
+@media only screen and (max-width: 550px) {
+  .banner-container {
+    padding: 6rem 2rem 2rem;
+  }
 
-    .banner-links {
-        flex-direction: column;
-        width: 100%;
-        align-items: normal;
-    }
+  .banner-heading,
+  .banner-heading span {
+    font-size: 2.5rem;
+    line-height: 45px;
+  }
+
+  .banner-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+  }
 }
