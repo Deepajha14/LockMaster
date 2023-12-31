@@ -17,8 +17,16 @@ export default function Banner() {
           passwords and autofills them across websites and applications.
         </div>
         <div className="banner-links">
-          <Button icon={<LuLogIn />} label="Login or Sign Up" />
-          <Button icon={<GrAppsRounded />} label="Explore about Creator" />
+          <Button 
+            icon={<LuLogIn />} 
+            label="Login or Sign Up" 
+            to="/register" 
+          />
+          <Button
+            icon={<GrAppsRounded />}
+            label="Explore about Creator"
+            to="https://deepajha.netlify.app/"
+          />
         </div>
       </div>
     </div>

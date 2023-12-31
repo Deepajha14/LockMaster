@@ -1,7 +1,6 @@
 .landing-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -11,7 +10,7 @@
   fill: var(--color-light-shades-8);
   font-size: 3rem;
   cursor: pointer;
-  margin-bottom: 5rem;
+  margin: 0 auto;
 }
 
 @keyframes jump {

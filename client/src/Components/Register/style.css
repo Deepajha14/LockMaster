@@ -1,6 +1,7 @@
 .login-bg {
   background-color: var(--color-dialog-bg);
-  padding: 1rem;
+  padding: 8rem 0 0;
+  height: 100vh;
 }
 
 .login-box {
