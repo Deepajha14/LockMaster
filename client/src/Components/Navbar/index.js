@@ -5,6 +5,7 @@ import { FaUserCircle, FaEquals } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { FaPowerOff, FaStar, FaRegStar, FaGithub } from "react-icons/fa6";
 import { LuLogIn } from "react-icons/lu";
+import NavTabs from "../NavTabs";
 
 export default function Navbar() {
   const [clickedState, setClickState] = useState(false);
@@ -13,50 +14,71 @@ export default function Navbar() {
     menuList[0].classList.toggle("show-nav-item-list");
     setClickState(!clickedState);
   };
+  // const value = 'Star repo on ' + <FaGithub />;
+  // const content = "star repo on" +  <FaGithub/>;
+  // const content = {
+  //   text: "star repo on",
+  //   icon: <FaGithub/>,
+  // };
 
   return (
     <div className="nav-container">
-      <div className="lockmaster-logo-container">LockMaster</div>
-      <div className="user-info-container">
-        <div className="user-profile-img-container">
-          <FaUserCircle className="user-profile-icon" />
-        </div>
-        <div className="user-name">John Doe</div>
-      </div>
-      <div className="search-box-container">
-        <BsSearch className="search-icon" />
-        <input className="search-box-input" placeholder="LockMaster"></input>
-      </div>
-      <div className="hamburger-container" onClick={showMenu}>
+      {/* <div className="lockmaster-logo-container">LockMaster</div> */}
+      <NavTabs
+        class="user-info"
+        id="user-info"
+        logo={<FaUserCircle />}
+        value="John Doe"
+      />
+      <div onClick={showMenu}>
         {clickedState ? (
-          <ImCross className="ham-bar" />
+          <NavTabs 
+            class="hamburger" 
+            id="hamburger" 
+            logo={<ImCross />} 
+          />
         ) : (
-          <FaEquals className="ham-bar" />
+          <NavTabs 
+            class="hamburger" 
+            id="hamburger" 
+            logo={<FaEquals />} 
+          />
         )}
       </div>
       <div className="nav-item-list">
-        <div
-          className="github-star-repo-container nav-item"
+        <NavTabs
+          class="search-box"
+          id="search-box"
+          logo={<BsSearch />}
+          value={<input placeholder="LockMaster" />}
+        />
+        <NavTabs
+          class="star-repo nav-item"
+          id="star-repo"
+          logo={
+            clickedState ? (
+              <FaStar className="star-repo-icon" />
+            ) : (
+              <FaRegStar className="star-repo-icon" />
+            )
+          }
+          value="Star Repo on "
           onClick={() => {
             setClickState(!clickedState);
           }}
-        >
-          {clickedState ? (
-            <FaStar className="star-repo-icon" />
-          ) : (
-            <FaRegStar className="star-repo-icon" />
-          )}
-          <div className="star-repo">Star Repository on </div>
-          <FaGithub className="github-icon" />
-        </div>
-        <div className="login-sign-up-container nav-item">
-          <LuLogIn className="login-sign-up-icon" />
-          <div className="login-sign-up">Login or Sign Up</div>
-        </div>
-        <div className="logout-container nav-item">
-          <FaPowerOff className="logout-icon" />
-          <div className="logout">Logout</div>
-        </div>
+        />
+        {/* <NavTabs
+          class="login-signup nav-item"
+          id="login-signup"
+          logo={<LuLogIn />}
+          value="Login or Sign Up"
+        /> */}
+        <NavTabs
+          class="logout nav-item"
+          id="logout"
+          logo={<FaPowerOff />}
+          value="Logout"
+        />
       </div>
     </div>
   );

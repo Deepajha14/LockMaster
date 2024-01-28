@@ -3,157 +3,74 @@
 .nav-container {
   position: fixed;
   background-color: var(--color-background);
-  width: 100%;
   z-index: 1;
 }
 
 .nav-container,
 .nav-item-list {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:flex-end;
   align-items: center;
   padding: 1rem 1.5rem;
-  gap: 1.5rem;
-  height: 5.5rem;
 }
 
 .nav-item-list {
-  padding: 1rem 0;
+  height: 100%;
+  padding: 0rem 0;
 }
 
 .lockmaster-logo-container {
   width: 100%;
   font-family: "Dancing Script", cursive;
-  font-size: 3.25rem;
-  font-weight: 450;
-  line-height: 61px;
+  font-size: 3rem;
   cursor: pointer;
-  display: none;
+  color: var(--color-light-shades-alpha-5);
 }
 
-.user-info-container,
-.search-box-container,
-.hamburger-container,
-.github-star-repo-container,
-.login-sign-up-container,
-.logout-container {
-  background-color: var(--color-light-shades-alpha-1);
-  height: 100%;
-  white-space: nowrap;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0.7rem 1.2rem;
-  border-radius: 16px;
-  box-shadow: inset 0 0 0 1px var(--color-light-shades-alpha-1);
-  cursor: pointer;
-}
-
-.user-info-container,
-.search-box-container,
-.logout-container {
-  /* display: none; */
-}
-
-.user-profile-img-container {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 100%;
-  background-color: var(--color-background);
-}
-
-.user-profile-icon {
-  font-size: 2rem;
-  fill: var(--color-light-shades-alpha-8);
-}
-
-.search-box-container {
+.search-box {
   width: 100%;
+  height: 100%;
 }
 
-.search-box-input {
+
+.search-box input {
   width: 100%;
   height: 100%;
   background-color: transparent;
   outline: none;
   border: none;
   font-size: 1.25rem;
+  color: var(--color-light-shades-alpha-8);
 }
 
-.search-box-input::placeholder {
+.search-box input::placeholder {
   font-family: "Dancing Script", cursive;
-  font-size: 1.75rem;
-  font-weight: 450;
-  line-height: 61px;
+  font-size: 1.85rem;
   text-align: center;
 }
 
-.search-icon,
-.ham-bar,
-.star-repo-icon,
-.logout-icon,
-.login-sign-up-icon,
-.github-icon {
-  font-size: 1.5rem;
-  fill: var(--color-light-shades-alpha-7);
-}
-
-.hamburger-container {
+.hamburger {
   padding: 1rem;
   border-radius: 100%;
   display: none;
 }
 
-.github-icon {
-  margin-left: 0.5rem;
-}
-
-.user-name,
-.star-repo,
-.login-sign-up,
-.logout {
-  color: var(--color-light-shades-alpha-8);
-  margin-left: 1rem;
-  transition: all 0.25s ease-in-out;
-}
-
-.user-info-container:hover .user-name,
-.user-info-container:hover .user-profile-icon,
-.github-star-repo-container:hover .star-repo,
-.login-sign-up-container:hover .login-sign-up,
-.logout-container:hover .logout,
-.search-box-container:hover .search-icon,
-.hamburger-container:hover .ham-bar,
-.github-star-repo-container:hover .star-repo-icon,
-.logout-container:hover .logout-icon,
-.login-sign-up-container:hover .login-sign-up-icon,
-.github-star-repo-container:hover .github-icon {
-  color: var(--color-light-shades-alpha-6);
-  fill: var(--color-light-shades-alpha-6);
-}
-
-.login-sign-up-container {
-  display: none;
-}
-
 @media only screen and (max-width: 900px) {
+  .nav-container {
+    justify-content: space-between;
+  }
   .lockmaster-logo-container {
     font-size: 2.25rem;
   }
 
-  .user-info-container {
-    background-color: transparent;
-    border-radius: 100%;
-    padding: 0.5rem 0.75rem;
-  }
-
   .user-name {
-    display: none;
+    /* display: none; */
   }
 
-  .hamburger-container {
-    display: initial;
+  .hamburger {
+    display: block;
   }
 
   .nav-item-list {
@@ -166,9 +83,9 @@
     position: absolute;
     top: 5.5rem;
     right: 1.5rem;
-    /* border: 2px solid red; */
+    width: fit-content;
     height: fit-content;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--color-light-shades-2);
     border-radius: 1rem;
     z-index: 2;
@@ -181,13 +98,10 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .search-box-input::placeholder {
-    font-size: 1.2rem;
+  .search-box {
+    width: 17rem;
   }
-
-  .nav-container,
-  .nav-item-list {
-    gap: 0.75rem;
-    padding: 1rem;
+  .search-box input::placeholder {
+    font-size: 1.5rem;
   }
 }
