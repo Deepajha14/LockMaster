@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Banner from "../../Components/Banner";
-// import Register from "../../Components/Register";
+// import Register from "../../Pages/Register";
 import { FaAngleDown } from "react-icons/fa";
 
 export default function Landing() {

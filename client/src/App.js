@@ -6,7 +6,7 @@ import "./App.css";
 import Landing from "./Pages/Landing";
 import Navbar from "./Components/Navbar";
 import Dashboard from "./Pages/Dashboard";
-import Register from "./Components/Register";
+import Register from "./Pages/Register";
 import PageNotFound from "./Components/PageNotFound";
 
 /** root routes */

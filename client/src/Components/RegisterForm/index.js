@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
-import { RxCross2 } from "react-icons/rx";
+// import { RxCross2 } from "react-icons/rx";
 import { TiTick } from "react-icons/ti";
-import Email from "../Email";
-// import UserName from "../UserName";
+// import Email from "../Email";
+import UserName from "../UserName";
 
-export default function Register() {
+export default function RegisterForm() {
   return (
-    <div className="login-bg">
+    // <div className="login-bg">
       <div className="login-box">
         <div className="header-bg"></div>
 
@@ -15,14 +15,14 @@ export default function Register() {
 
           <div className="login-base-heading">
             <h1>Login or Sign Up</h1>
-            <div className="cross-btn">
+            {/* <div className="cross-btn">
               <RxCross2 />
-            </div>
+            </div> */}
           </div>
 
           <div className="login-base-content">
-            <Email />
-            {/* <UserName/> */}
+            {/* <Email /> */}
+            <UserName/>
 
             <div className="terms-conditions">
               By logging in you are agree with our{" "}
@@ -33,7 +33,7 @@ export default function Register() {
           <div className="features">
             <div>
               <TiTick className="tick" />
-              <span>Full Access</span>
+              <span>Already Registered</span>
             </div>
 
             <div>
@@ -43,6 +43,6 @@ export default function Register() {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
