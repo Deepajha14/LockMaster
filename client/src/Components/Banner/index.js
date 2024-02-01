@@ -23,9 +23,10 @@ export default function Banner() {
             to="/register" 
           />
           <Button
+            class="git-repo"
             icon={<GrAppsRounded />}
-            label="Explore about Creator"
-            to="https://deepajha.netlify.app/"
+            label="Visit Github"
+            to="https://github.com/Deepajha14/LockMaster"
           />
         </div>
       </div>

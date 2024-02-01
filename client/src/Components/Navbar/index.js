@@ -9,6 +9,7 @@ import NavTabs from "../NavTabs";
 
 export default function Navbar() {
   const [clickedState, setClickState] = useState(false);
+  const [loggedInState, setLogInState] = useState(false);
   var showMenu = () => {
     var menuList = document.getElementsByClassName("nav-item-list");
     menuList[0].classList.toggle("show-nav-item-list");
@@ -23,62 +24,79 @@ export default function Navbar() {
 
   return (
     <div className="nav-container">
-      {/* <div className="lockmaster-logo-container">LockMaster</div> */}
-      <NavTabs
-        class="user-info"
-        id="user-info"
-        logo={<FaUserCircle />}
-        value="John Doe"
-      />
+      {loggedInState ? (
+        <NavTabs
+          class="user-info"
+          id="user-info"
+          logo={<FaUserCircle />}
+          value="John Doe"
+        />
+      ) : (
+        <div className="lockmaster-logo-container">LockMaster</div>
+      )}
+
       <div onClick={showMenu}>
         {clickedState ? (
-          <NavTabs 
-            class="hamburger" 
-            id="hamburger" 
-            logo={<ImCross />} 
-          />
+          <NavTabs class="hamburger" id="hamburger" logo={<ImCross />} />
         ) : (
-          <NavTabs 
-            class="hamburger" 
-            id="hamburger" 
-            logo={<FaEquals />} 
-          />
+          <NavTabs class="hamburger" id="hamburger" logo={<FaEquals />} />
         )}
       </div>
+
       <div className="nav-item-list">
-        <NavTabs
-          class="search-box"
-          id="search-box"
-          logo={<BsSearch />}
-          value={<input placeholder="LockMaster" />}
-        />
-        <NavTabs
-          class="star-repo nav-item"
-          id="star-repo"
-          logo={
-            clickedState ? (
-              <FaStar className="star-repo-icon" />
-            ) : (
-              <FaRegStar className="star-repo-icon" />
-            )
-          }
-          value="Star Repo on "
+        {loggedInState ? (
+          <NavTabs
+            class="search-box"
+            id="search-box"
+            logo={<BsSearch />}
+            value={<input placeholder="LockMaster" />}
+          />
+        ) : (
+          <div></div>
+        )}
+
+        <div
+          className="nav-item"
           onClick={() => {
             setClickState(!clickedState);
           }}
-        />
-        {/* <NavTabs
-          class="login-signup nav-item"
-          id="login-signup"
-          logo={<LuLogIn />}
-          value="Login or Sign Up"
-        /> */}
-        <NavTabs
-          class="logout nav-item"
-          id="logout"
-          logo={<FaPowerOff />}
-          value="Logout"
-        />
+        >
+          <NavTabs
+            class="star-repo"
+            id="star-repo"
+            logo={
+              clickedState ? (
+                <FaStar className="star-repo-icon" />
+              ) : (
+                <FaRegStar className="star-repo-icon" />
+              )
+            }
+            value={`Star repo on ${(<FaGithub />)}`}
+          />
+        </div>
+
+        <div
+          className="nav-item"
+          onClick={() => {
+            setLogInState(!loggedInState);
+          }}
+        >
+          {loggedInState ? (
+            <NavTabs
+              class="logout"
+              id="logout"
+              logo={<FaPowerOff />}
+              value="Logout"
+            />
+          ) : (
+            <NavTabs
+              class="login-signup"
+              id="login-signup"
+              logo={<LuLogIn />}
+              value="Login or Sign Up"
+            />
+          )}
+        </div>
       </div>
     </div>
   );

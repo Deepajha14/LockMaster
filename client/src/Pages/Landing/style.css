@@ -4,13 +4,21 @@
   justify-content: center;
 }
 
+.scroll-down-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
 .scroll-down-btn {
   position: relative;
   animation: jump 1.25s infinite;
   fill: var(--color-light-shades-8);
   font-size: 3rem;
   cursor: pointer;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 @keyframes jump {

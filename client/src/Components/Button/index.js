@@ -4,7 +4,7 @@ import "./style.css";
 
 export default function Button(props) {
   return (
-    <Link to={props.to} className="btn">
+    <Link to={props.to} className={`${props.class} btn`}>
       <div className="btn-container">
         <div className="btn-icon">{props.icon}</div>
         <div className="btn-label">{props.label}</div>

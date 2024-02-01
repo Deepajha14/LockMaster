@@ -7,13 +7,19 @@
 }
 
 .btn-container {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.25rem;
   border-radius: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.7rem;
   white-space: nowrap;
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {

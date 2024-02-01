@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Banner from "../../Components/Banner";
-import Register from "../../Components/Register";
+// import Register from "../../Components/Register";
 import { FaAngleDown } from "react-icons/fa";
 
 export default function Landing() {
@@ -17,8 +17,10 @@ export default function Landing() {
     <div>
       <div className="landing-container">
         <Banner />
+        <div className="scroll-down-container">
         <FaAngleDown className="scroll-down-btn" id="nextSection" onClick={scrollToNextSection}/>
-        <Register />
+        </div>
+        {/* <Register /> */}
       </div>
     </div>
   );
