@@ -1,16 +1,10 @@
 import React from 'react'
-import "../LoginForm/style.css"
+import "./style.css"
 
-export default function RegisterForm() {
+export default function LoginForm() {
   return (
     <div className="login-box">
       <form className='login-form'>
-        <input
-            name="username"
-            placeholder="Username"
-            className="form-input-box"
-            type="username"
-        />
         <input
           name="email"
           placeholder="Email"
@@ -23,13 +17,14 @@ export default function RegisterForm() {
           className="form-input-box"
           type="password"
         />
+        <div className="forgot-pwd">Forgot Password?</div>
         <input
           type="button"
-          value="Create Account"
+          value="Login"
           className="submit-btn"
         />
       </form>
-      <div className="login-signup">Already have an Account? <span>Sign In</span></div>
+      <div className="login-signup">Don't have an Account? <span>Sign Up</span></div>
     </div>
   )
 }

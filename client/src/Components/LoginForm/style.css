@@ -1,9 +1,9 @@
-.email-form {
+.login-box,
+.login-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: normal;
-  margin-bottom: 1.5rem;
 }
 
 .form-input-box {
@@ -23,17 +23,45 @@
   outline: none;
 }
 
-.continue-btn {
+.forgot-pwd {
+    color: var(--color-light-shades-6);
+    align-self: flex-end;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.forgot-pwd:hover {
+    color: var(--color-light-shades-8);
+}
+
+.submit-btn {
   all: unset;
   cursor: pointer;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   background-color: var(--color-light-shades-3);
   color: var(--color-light-shades-8);
+  margin-top: 1rem;
 }
 
-.continue-btn:hover {
+.submit-btn:hover {
   background-color: var(--color-light-shades-4);
+}
+
+.login-signup {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    color: var(--color-light-shades-6);
+}
+
+@media only screen and (max-width: 500px) {
+    .form-input-box, .submit-btn {
+        padding: 0.75rem;
+    }
 }
