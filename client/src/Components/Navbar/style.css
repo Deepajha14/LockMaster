@@ -2,7 +2,8 @@
 
 .nav-container {
   position: fixed;
-  background-color: var(--color-background);
+  background-color: transparent;
+  backdrop-filter: blur(8px);
   z-index: 1;
 }
 

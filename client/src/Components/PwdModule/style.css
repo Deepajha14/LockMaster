@@ -1,0 +1,49 @@
+.module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+}
+
+.card-container {
+    width: calc(100% - 1.5rem);
+    max-height: 17.5rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: 2px solid var(--color-light-shades-alpha-2);
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+}
+
+.module-banner {
+    width: 100%;
+    padding: 1rem;
+    background-color: #b89aff;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset -2px -2px 3px 3px rgba(142, 56, 152, 0.615);
+
+}
+
+.module-name {
+    font-size: 1rem;
+    color: var(--color-light-shades-8);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.module-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.module-options svg {
+    font-size: 2rem;
+    color: var(--color-light-shades-8);
+}

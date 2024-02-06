@@ -1,0 +1,65 @@
+.dashboard-bg {
+    min-height: 100vh;
+    padding: 8rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+.new-module {
+    background: -webkit-linear-gradient(
+        45deg,
+        #fa8bff 0%,
+        #00c3ff 39%,
+        #726dff 51%,
+        #ff6de9 63%,
+        #ff345d 89%,
+        #970fff 100%
+      );
+      box-shadow: inset -2px -2px 3px 3px rgba(124, 6, 137, 0.418);
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+}
+
+.new-module:hover {
+    background: -webkit-linear-gradient(
+        45deg,
+        #cf6ed4 0%,
+        #019ece 39%,
+        #6561db 51%,
+        #c83db4 63%,
+        #c42545 89%,
+        #430772 100%
+    );
+    box-shadow: inset -2px -2px 3px 3px rgba(70, 2, 78, 0.492);
+    scale: 0.99;
+} 
+
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    fill: var(--color-light-shades-8);
+    color: var(--color-light-shades-8);
+}
+
+.new-folder {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    color: var(--color-light-shades-8);
+    font-weight: 600;
+}

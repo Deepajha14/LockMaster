@@ -1,5 +1,5 @@
 .register-bg {
-    background-color: var(--color-dialog-bg);
+    background-color: var(--color-light-shades-alpha-1);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
   }
   
   .register-box {
-    margin: 7rem auto;
+    margin: 7rem auto 0;
     background-color: var(--color-dialog);
     max-width: 28rem;
     border-radius: 20px;
