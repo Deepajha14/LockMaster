@@ -1,1 +1,1 @@
-export const DB_NAME = "lockmaster"
+export const DB_NAME = "LockMaster"
