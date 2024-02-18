@@ -3,7 +3,7 @@ import "../LoginForm/style.css"
 
 export default function RegisterForm() {
   return (
-    <div className="login-box">
+    <div className="signup-box">
       <form className='login-form'>
         <input
             name="username"

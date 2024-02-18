@@ -1,4 +1,12 @@
-.login-box,
+.login-box {
+  /* animation: pop-up 1s ease 2s 1 alternate; */
+}
+
+.signup-box {
+  /* animation: pop-up 1s ease 2s 1 alternate; */
+}
+
+.login-box, .register-box,
 .login-form {
   width: 100%;
   display: flex;
@@ -53,7 +61,7 @@
   background-color: var(--color-light-shades-4);
 }
 
-.login-signup {
+.login-signup-form {
     font-size: 12px;
     text-align: center;
     padding-top: 10px;

@@ -1,11 +1,12 @@
 .outer-dark-cover {
-    background-color: transparent;
+    /* background-color: transparent;
     padding: 0.25rem;
     border-radius: 1.25rem;
-    height: fit-content;
+    height: fit-content; */
 }
 
 .tab-container {
+    margin: 0 0.25rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     background-color: var(--color-light-shades-alpha-1);

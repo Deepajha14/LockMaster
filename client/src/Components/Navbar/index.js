@@ -44,12 +44,22 @@ export default function Navbar() {
       </div>
 
       <div className="nav-item-list">
-        {loggedInState ? (
+        {/* {loggedInState ? (
           <NavTabs
             class="search-box"
             id="search-box"
             logo={<BsSearch />}
             value={<input placeholder="LockMaster" />}
+          />
+        ) : (
+          <div></div>
+        )} */}
+
+        {loggedInState ? (
+          <NavTabs
+            class="search-box nav-item"
+            id="search-box"
+            value="LockMaster"
           />
         ) : (
           <div></div>

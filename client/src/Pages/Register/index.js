@@ -16,8 +16,8 @@ export default function Register() {
           </div>
 
           <div className="register-base-content">
-            <RegisterForm/>
-            {/* <LoginForm /> */}
+            {/* <RegisterForm/> */}
+            <LoginForm />
           </div>
 
           <div className="features">

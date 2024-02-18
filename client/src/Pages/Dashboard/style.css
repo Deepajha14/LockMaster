@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .new-module {

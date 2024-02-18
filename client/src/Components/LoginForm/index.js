@@ -24,7 +24,7 @@ export default function LoginForm() {
           className="submit-btn"
         />
       </form>
-      <div className="login-signup">Don't have an Account? <span>Sign Up</span></div>
+      <div className="login-signup-form">Don't have an Account? <span>Sign Up</span></div>
     </div>
   )
 }

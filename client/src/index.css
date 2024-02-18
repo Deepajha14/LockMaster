@@ -34,6 +34,46 @@
   box-sizing: border-box;
 }
 
-.app {
-  background-color: var(--color-background);
+@keyframes pop-up {
+  0%{
+    opacity: 50%;
+    scale: 0.75;
+  }  
+  100%{
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0%{
+      opacity: 60%;
+      transform: translateX(75px);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateX(0px);
+    }
+}
+
+@keyframes slide-out-right {
+  0%{
+      opacity: 60%;
+      transform: translateX(-75px);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateX(0px);
+    }
+}
+
+@keyframes slide-down {
+  0%{
+      opacity: 60%;
+      transform: translatey(-75px);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateY(0px);
+    }
 }
