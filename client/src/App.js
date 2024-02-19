@@ -1,41 +1,43 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 /** import all Components */
 import Landing from "./Pages/Landing";
-import Navbar from "./Components/Navbar";
-import Dashboard from "./Pages/Dashboard";
-import Register from "./Pages/Register";
+import User from "./user.js";
+// import Navbar from "./Components/Navbar";
+// import Dashboard from "./Pages/Dashboard";
+// import Register from "./Pages/Register";
 import PageNotFound from "./Components/PageNotFound";
 
 /** root routes */
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing></Landing>,
+    element: <Landing/>,
   },
   {
-    path: "/dashboard",
-    element: <Dashboard></Dashboard>,
-  },
-  {
-    path: "/register",
-    element: <Register></Register>,
+    path: "/user/*",
+    element: <User/>
   },
   {
     path: "*",
-    element: <PageNotFound></PageNotFound>,
+    element: <PageNotFound/>,
   },
 ]);
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <RouterProvider router={router}></RouterProvider>
       </main>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing/>}></Route>
+        </Routes>
+      </BrowserRouter> */}
     </div>
   );
 }
