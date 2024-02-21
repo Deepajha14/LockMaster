@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Sidebar from './Components/Sidebar';
 
 /** import all Components */
+import Sidebar from './Components/Sidebar';
 import Credentials from "./Pages/Credentials";
 import Collections from "./Pages/Collections";
 

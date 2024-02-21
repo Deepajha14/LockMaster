@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 /** import all Components */
-import Register from "./Pages/Register";
 import SideBanner from "./Components/SideBanner";
-import Login from "./Components/LoginForm";
+import Register from "./Pages/Register";
+import Login from "./Pages/Login";
 
 function User() {
   return (
