@@ -1,3 +1,7 @@
 .app {
     background-color: var(--color-background);
 }
+
+.auth, .user {
+    display: flex;
+}

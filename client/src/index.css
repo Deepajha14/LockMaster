@@ -32,7 +32,7 @@
   font-family: Satoshi-Variable, -apple-system, BlinkMacSystemFont, Helvetica,
     Arial, sans-serif;
   box-sizing: border-box;
-  color: var(--color-accent);
+  color: var(--color-light-shades-8);
 }
 
 @keyframes pop-up {

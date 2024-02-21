@@ -1,0 +1,97 @@
+.sidebar-container {
+    position: fixed;
+    max-width: 20rem;
+    min-width: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-shades-1);
+    padding: 0 0.15rem;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: var(--color-light-shades-alpha-1);
+}
+
+.searchbox-container {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.searchbox-container input {
+    all:unset;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sidebar-container button:hover {
+    background-color: var(--color-light-shades-alpha-2);
+}
+
+.icon-container {
+    all: unset;
+    box-sizing: content-box;
+    padding: 0.75rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-wrapper section {
+    margin-bottom: 2rem;
+}
+
+.collection-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-wrapper section h1 {
+    font-size: 1rem;
+    color: var(--color-light-shades-5);
+    margin-left: 1rem;
+}
+
+.menu-wrapper ul {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-wrapper a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-wrapper a:hover, .menu-wrapper a:active {
+    background-color: var(--color-light-shades-alpha-1);
+}
+
+.collection-point {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color:lightcoral;
+}
