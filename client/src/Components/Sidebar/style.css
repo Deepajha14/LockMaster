@@ -1,5 +1,6 @@
 .sidebar-container {
-    position: fixed;
+    position: sticky;
+    width: 23%;
     max-width: 20rem;
     min-width: 5rem;
     height: 100vh;
@@ -19,12 +20,14 @@
 .searchbox-container {
     display: flex;
     margin-left: 1rem;
+    width: 100%;
 }
 
 .searchbox-container input {
     all:unset;
     background-color: transparent;
     cursor: pointer;
+    width: 100%;
 }
 
 .sidebar-container button:hover {
