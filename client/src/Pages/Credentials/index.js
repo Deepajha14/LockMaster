@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./style.css";
+import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { TfiMoreAlt } from "react-icons/tfi";
 import { MdOutlineAdd } from "react-icons/md";
+// import AddPassword from '../AddPassword';
 
-export default function credentials() {
+export default function Credentials() {
+
   return (
+    <>
     <div className='credentials-page'>
       <section>
-        <div className='add-new'>
+        <Link to = '/user/credentials/add' className='add-new'>
+        {/* <div className='add-new'> */}
           <button className='icon-container'><MdOutlineAdd className='icon'/></button>
           <div>Add New</div>
-        </div>
+          {/* </div> */}
+        </Link>
         <div className='my-account'>My Account <FaChevronDown /></div>
       </section>
       <table>
@@ -31,5 +37,9 @@ export default function credentials() {
         </tr>
       </table>
     </div>
-  )
+    {/* {
+      addPwdDisplay ? <AddPassword ref={ref}/> : <div></div>
+    } */}
+    </>
+  );
 }

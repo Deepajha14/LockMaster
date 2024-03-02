@@ -6,6 +6,7 @@ import "./App.css";
 import Sidebar from './Components/Sidebar';
 import Credentials from "./Pages/Credentials";
 import Collections from "./Pages/Collections";
+import AddPassword from "./Pages/AddPassword";
 
 function User() {
   return (
@@ -14,6 +15,7 @@ function User() {
         <Routes>
           <Route path="/credentials" element={<Credentials/>}></Route>
           <Route path="/collections" element={<Collections/>}></Route>
+          <Route path="/credentials/add" element={<AddPassword/>}></Route>
         </Routes>
     </div>
   );

@@ -1,0 +1,145 @@
+.add-password-bg {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(19, 21, 26, 0.7);
+}
+
+.add-password-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35rem;
+    height: 100vh;
+    background-color: var(--color-light-shades-1);
+    box-shadow: inset 0 0 0 2px var(--color-light-shades-alpha-1);
+    overflow-y: scroll;
+}
+
+.addPwd-top {
+    position: fixed;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-light-shades-2);
+    width: 100%;
+}
+
+.big-lock-container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-shades-3);
+    border-radius: 7px;
+}
+
+.big-lock{
+    font-size: 3.5rem;
+}
+
+.addPwd-top div {
+    font-size: 2.25rem;
+    color: var(--color-confirm-2);
+}
+
+.add-password-panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 9.5rem 0 6rem;
+}
+
+.add-password-panel section {
+    box-shadow: inset 0 0 0 2px var(--color-light-shades-alpha-1);
+    border: 1px solid var(--color-light-shades-3);
+    background-color: var(--color-background);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.add-password-panel section h1 {
+    margin: 2rem 0;
+}
+
+.add-password-panel section label {
+    font-size: 0.6rem;
+    color: var(--color-light-shades-5);
+    margin-left: 10px;
+}
+
+.add-password-panel section input, .add-password-panel section textarea {
+    background-color: transparent;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.add-password-panel section textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+.input-container {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-container div {
+    padding: 0.8rem;
+    margin: 0.1rem 0.3rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container div:hover {
+    background-color: var(--color-light-shades-3);
+}
+
+.add-password-panel .buttons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 35rem;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid var(--color-light-shades-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding: 1rem 2rem 2rem;
+}
+
+.add-password-panel .buttons button {
+    all: unset;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    background-color: var(--color-light-shades-2);
+    box-shadow: inset 0 0 0 2px var(--color-light-shades-alpha-1);
+    cursor: pointer;
+}
+
+.collection-btn {
+    all: unset;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.collection-btn:hover, .add-password-panel .buttons button:hover {
+    background-color: var(--color-light-shades-3);
+    box-shadow: inset 0 0 0 2px var(--color-light-shades-alpha-1);
+}
